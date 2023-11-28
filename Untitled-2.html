@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Art Gallery Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Art Gallery Management System</h1>
+        <div id="user-info">
+            <span id="username">Xoş gəlmisiniz</span>
+            <button onclick="showLoginForm()">Daxil ol</button>
+            <button onclick="logoutForm()">Çıxış</button>
+            <button onclick="showRegisterForm()">Qeydiyyat</button>
+        </div>
+        
+        </div>
+    </header>
+    <main>
+        <section id="Rəsmlər">
+            <h2>Rəsmlər</h2>
+            <div class="art-piece" onclick="showDetails('Vincent van Gogh', 'Four cut Sunflowers', '50.000$', ' Hollandiya','Bu resm adindanda gorunduyu kimi 4 gunebaxanin 4 ferqli bucaqdan cekilmis seklidir.Bu eseri V.Gogh 1887  ciilde yağlı boya ile cekmisdir.V.Goghun eserlerinde tez tez rast gelinen tebietin ve çiçeklerin gözəlliyinin nümunəsidir.Bu əsərdə həmçinin V.Gogh rənglərdən və fırça vurğularıyla  günəbaxanlarin dinamikliyini və enerjisini əldə etməyə çalışmışdır.')">
+                <img src="C:\Users\xnahm_kzf3mee\OneDrive\Resimler\eser2..jpg" alt="1">
+                <div class="art-details">
+                    <p>Ressam: Vincent van Gogh</p>
+                    <p>Eser: Four cut Sunflowers</p>
+                    <p>Qiymet: 50.000$</p>
+                    <p>Ölke: Hollandiya</p>
+                    <p>Melumat:Bu resm adindanda gorunduyu kimi 4 gunebaxanin 4 ferqli bucaqdan cekilmis seklidir.Bu eseri V.Gogh 1887  ci 
+                        ilde yağlı boya ile cekmisdir.V.Gogh'un eserlerinde tez tez rast gelinen tebietin ve çiçeklerin gözəlliyinin nümunəsidir.
+                        Bu əsərdə həmçinin V.Gogh rənglərdən və fırça vurğularıyla  günəbaxanlarin dinamikliyini və enerjisini əldə etməyə çalışmışdır.
+                    </cite></p>
+                </div>
+            </div>
+            <div class="art-piece" onclick="showDetails('Leondardo da Vinci', 'The Last Supper ', '3.000.000$', 'Italyan','İsa Məsihin çarmıxa çəkilməzdən əvvəl axırıncı dəfə həvariləri ilə yediyi yemək.Bu yeməkdə İsa Məsih Rəbbin Süfrəsi ayinini təsis etmişdir. Bu yeməyə həmçinin sirli və ya gizli şam yeməyi deyirlər, çünki İsa ilə şagirdləri o gecə yəhudilərin ali məclisi olan Sinedriondan gizlənmək məcburiyyətində idilər.Sonuncu şam yeməyi yəhudilərin Pasxa bayramı zamanında baş vermişdir. Şam yeməyi, həm də yevxaristiya Tövratın dini simvolikası ilə sıx bağlıdır. İnsanların bir-birləri və Uca Tanrı ilə birliyin rəmzi olaraq müqəddəs süfrədə iştirak etmə adəti qədimdən olmuşdur. Yəhudilərin arasında da belə adət-ənənə var idi. İsa Məsih bu qədim adət-ənənə əsasında müqəddəs şəriklik süfrəsi yaxud Rəbbin Süfrəsi və ya sonradan xristian kilsəsində yevxasirtiya kimi qəbul olunan müqəddəs mərasimi təsis etmişdir.')">
+                 <img src="C:\Users\xnahm_kzf3mee\Downloads\da vinci.jpg" alt="2">
+                <div class="art-details">
+                    <p>Ressam:Leondardo da Vinci</p>
+                    <p>Eser:The Last Supper  </p>
+                    <p>Qiymet:3.000.000$</p>
+                    <p>Ölke: Italyan</p>
+                    <p>Melumat: İsa Məsihin çarmıxa çəkilməzdən əvvəl axırıncı dəfə həvariləri ilə yediyi yemək.Bu yeməkdə İsa Məsih Rəbbin Süfrəsi ayinini təsis etmişdir. Bu yeməyə həmçinin "sirli" və ya "gizli" şam yeməyi deyirlər, çünki İsa ilə şagirdləri o gecə yəhudilərin ali məclisi olan Sinedriondan gizlənmək məcburiyyətində idilər.Sonuncu şam yeməyi yəhudilərin Pasxa bayramı zamanında baş vermişdir. Şam yeməyi, həm də yevxaristiya Tövratın dini simvolikası ilə sıx bağlıdır. İnsanların bir-birləri və Uca Tanrı ilə birliyin rəmzi olaraq müqəddəs süfrədə iştirak etmə adəti qədimdən olmuşdur. Yəhudilərin arasında da belə adət-ənənə var idi. İsa Məsih bu qədim adət-ənənə əsasında müqəddəs "şəriklik süfrəsi", yaxud Rəbbin Süfrəsi və ya sonradan xristian kilsəsində yevxasirtiya kimi qəbul olunan müqəddəs mərasimi təsis etmişdir.</p>
+
+                </div>
+            </div>
+        </section>
+        <section id="Sərgilər">
+            <h2>Sərgilər</h2>
+            <div class="Sərgilər" onclick="seeExhibits('Dahi * Ressamlar* sergisi ', '01.12.2024-15.12.2024', 'Heyder Eliyev Sarayi', 'Dahi ressamlarin portretleri ile tanış olmağa tələsin.')">
+                <h3>Adı:Dahi *Ressamlar* sergisi</h3>
+                <p>Tarix: 01.12.2024-15.12.2024</p>
+                <p>Mekan:Heyder Eliyev Sarayi </p>
+                <p>Təsvir: Dahi ressamlarin portretleri ile tanış olmağa tələsin.</p>
+            </div>
+            <div class="Sergiler" onclick="seeExhibits('Renglerin Harmoniyasi', '10.01.2024-21.01.2024', 'Xalça muzeyi', ' Rənglərin bir-biri ilə olan ahəngi ruhumuzu dinləndirsi')">
+                <h3>Adı:Renglerin Harmoniyasi</h3>
+                <p>Tarix: 10.01.2024-21.01.2024</p>
+                <p>Mekan: Xalça muzeyi</p>
+                <p>Təsvir: Rənglərin bir-biri ilə olan ahəngi ruhumuzu dinləndirsin.</p>
+            </div>
+           <div class="biletlər">
+            <h3>Biletlər</h3>
+            <ul>
+                <li>
+                    <span class="biletin növü">normal bilet:</span>
+                    <span class="biletin qiyməti">$2</span>
+                    <span class="biletin sayi">Sayı: <span id="normalSayı">0</span></span>
+                    <button onclick="artırmaqSayı('normalSayı')">+</button>
+                    <button onclick="azaltmaqSayı('normalSayı')">-</button>
+                </li>
+                <li>
+                    <span class="biletin növü">tələbələr üçün bilet:</span>
+                    <span class="biletin qiyməti">$1</span>
+                    <span class="biletin sayi">Sayı: <span id="tələbələrüçünSayı">0</span></span>
+                    <button onclick="artırmaqSayı('tələbələrüçünSayı')">+</button>
+                    <button onclick="azaltmaqSayı('tələbələrüçünSayı')">-</button>
+                </li>
+                <li>
+                    <span class="biletin növü">VIP bilet:</span>
+                    <span class="biletin qiyməti">$5</span>
+                    <span class="biletin sayi">Sayı: <span id="vipSayı">0</span></span>
+                    <button onclick="artırmaqSayı('vipSayı')">+</button>
+                    <button onclick="azaltmaqSayı('vipSayı')">-</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>       
+            </main>           
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Art Gallery Management System</p>
+    </footer>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('detailsModal')">&times;</span>
+            <h2>Details</h2>
+            <p id="modalContent"></p>
+        </div>
+    </div>
+
+    <div id="exhibitsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('exhibitsModal')">&times;</span>
+            <h2>Exhibits</h2>
+            <p id="exhibitsContent"></p>
+        </div>
+    </div>
+    
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <form onsubmit="login(event)">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                <br>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
